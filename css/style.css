@@ -1,0 +1,26 @@
+@import './icons.css';
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
+
+/* light mode color */
+:root {
+  --primary-color: rgb(75, 106, 155);
+  --secondary-color: rgb(0, 121, 255);
+  --data: rgb(43, 52, 66);
+  --body-bg: rgb(246, 248, 255);
+  --content-bg: rgb(254, 254, 254);
+  --icon: rgb(105, 124, 154);
+}
+
+[data-theme="dark"] {
+  --primary-color: rgb(255, 255, 255);
+  --secondary-color: rgb(0, 121, 255);
+  --data: rgb(255, 255, 255);
+  --body-bg: rgb(20, 29, 47);
+  --content-bg: rgb(30, 42, 71);
+  --icon: rgb(255, 255, 255);
+}
+
+body {
+  font-family: "Space Mono", monospace;
+  background-color: var(--body-bg);
+}

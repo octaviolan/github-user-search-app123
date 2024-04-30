@@ -5,24 +5,64 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <link rel="stylesheet" href="./css/style.css">
   
-  <title>Frontend Mentor | GitHub user search app</title>
+  <title>GitHub user search app</title>
 </head>
 <body>
+  <div class="container">
+    <header class="header">
+      <span class="logo">devfinder</span>
+      <div class="toggle-container">
+        <input type="checkbox" id="toggle" class="toggle-input">
+        <label for="toggle" class="toggle-text">Dark<i class="icon-moon"></i></label>
+      </div>
+    </header>
 
-  devfinder
+    <section class="search">
+      <form autocomplete="off">
+        <i class="icon-search"></i>
+        <input type="text" id="search" class="search-input" placeholder=" Search GitHub username...">
+        <button type="submit" class="search-button">Search</button>
+      </form>
+    </section>
+  
+    <section class="user">
+      <article class="user-info">
+        <img src="./assets/avatar.png" alt="Avatar" class="user-avatar">
+        <span class="user-name">The Octocat</span>
+        <span class="user-login">@octocat</span>
+        <span class="user-created">Joined 25 Jan 2011</span>
+      </article>
 
-  Light
-  Dark
+      <article class="user-bio">
+        <p class="bio">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros.</p>
+      </article>
 
-  Search GitHub username...
-  Search
+      <article class="user-github">
+        <div class="user-repos">
+          <span>Repos</span>
+          <span class="public-repos">8</span>
+        </div>
+        <div class="user-followers">
+          <span>Followers</span>
+          <span class="followers">3938</span>
+        </div>
+        <div class="user-followings">
+          <span>Following</span>
+          <span class="following">9</span>
+        </div>
+      </article>
 
-  Joined
-
-  Repos
-  Followers
-  Following
+      <ul class="user-social">
+        <li><i class="icon-location"></i>San Francisco</li>
+        <li><i class="icon-website"></i><a href="https://github.blog">https://github.blog</a></li>
+        <li><i class="icon-twitter"></i>Not Available</li>
+        <li><i class="icon-company"></i>@github</li>
+      </ul>
+    </section>
+    
+  </div>
 
 </body>
 </html>
