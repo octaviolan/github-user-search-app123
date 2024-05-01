@@ -5,22 +5,71 @@
 :root {
   --primary-color: rgb(75, 106, 155);
   --secondary-color: rgb(0, 121, 255);
-  --data: rgb(43, 52, 66);
+  --user: rgb(43, 52, 66);
   --body-bg: rgb(246, 248, 255);
   --content-bg: rgb(254, 254, 254);
   --icon: rgb(105, 124, 154);
+  --logo: rgb(34, 39, 49);
 }
 
 [data-theme="dark"] {
   --primary-color: rgb(255, 255, 255);
   --secondary-color: rgb(0, 121, 255);
-  --data: rgb(255, 255, 255);
+  --user: rgb(255, 255, 255);
   --body-bg: rgb(20, 29, 47);
   --content-bg: rgb(30, 42, 71);
   --icon: rgb(255, 255, 255);
+  --logo: rgb(255, 255, 255);
 }
 
 body {
   font-family: "Space Mono", monospace;
   background-color: var(--body-bg);
+  margin: 31px 24px 0 24px;
+}
+
+.container {
+  
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2.25rem;
+}
+
+.header .logo {
+  font-weight: bold;
+  font-size: 1.625rem;
+  color: var(--logo);
+}
+
+.header .toggle-container {
+ 
+}
+
+.header .toggle-container .toggle-input {
+  display: none;
+}
+
+.header .toggle-container .toggle-text {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  color: var(--primary-color);
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 13px;
+  letter-spacing: 2.5px;
+  cursor: pointer;
+}
+
+.header .toggle-container .toggle-text i {
+  font-size: 20px;
+  letter-spacing: 0;
+}
+
+.search {
+  background-color: var(--content-bg);
 }
