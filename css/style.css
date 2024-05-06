@@ -69,6 +69,7 @@ body {
   font-size: 0.8125rem;
   letter-spacing: 2.5px;
   cursor: pointer;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 .header .toggle-container .toggle-text:hover {
@@ -125,6 +126,7 @@ body {
   font-size: 14px;
   color: var(--button);
   cursor: pointer;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 .user {
@@ -175,6 +177,32 @@ body {
   margin-bottom: 23px;
   font-size: 0.75rem;
   line-height: 1.575rem;
+}
+
+.user-github {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 1.125rem 0.875rem;
+  border-radius: 0.625rem;
+  background-color: var(--body-bg);
+  font-size: 0.75em;
+}
+
+.user-repos,
+.user-followers,
+.user-followings {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  text-align: center;
+}
+
+.public-repos,
+.followers,
+.following {
+  color: var(--user);
+  font-size: 1rem;
+  font-weight: bold;
 }
 
 
