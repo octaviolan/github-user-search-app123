@@ -1,0 +1,159 @@
+.user {
+  padding: 2rem 1.5rem 3rem 1.5rem;
+  border-radius: 1rem;
+  background-color: var(--content-bg);
+}
+
+.user-info {
+  display: flex;
+  gap: 1.25rem;
+}
+
+.avatar-container {
+  min-width: 4.375rem;
+  max-width: 7.375rem;
+}
+
+.user-avatar {
+  width: 100%;
+  vertical-align: middle;
+}
+
+.info-container {
+  min-width: 11.8125rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.user-name {
+  color: var(--user);
+  font-weight: bold;
+}
+
+.user-login {
+  margin-bottom: 0.375rem;
+  color: var(--secondary-color);
+  font-size: 0.75rem;
+}
+
+.user-created {
+  font-size: 0.75rem;
+}
+
+.user-bio {
+  margin-top: 33px;
+  margin-bottom: 23px;
+  font-size: 0.75rem;
+  line-height: 1.575rem;
+}
+
+.user-github {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 1.125rem 0.875rem;
+  border-radius: 0.625rem;
+  background-color: var(--body-bg);
+  font-size: 0.75em;
+}
+
+.user-repos,
+.user-followers,
+.user-followings {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  text-align: center;
+}
+
+.public-repos,
+.followers,
+.following {
+  color: var(--user);
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.user-social {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding-left: 0;
+  margin-top: 1.5rem;
+  margin-bottom: 0;
+  list-style: none;
+  font-size: 0.75rem;
+}
+
+.user-social li {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.user-social li:nth-child(1) {
+  gap: 1rem;
+}
+
+.user-social li i {
+  font-size: 1.25rem;
+}
+
+.user-social li a {
+  text-decoration: none;
+  color: var(--primary-color);
+}
+
+@media screen and (min-width: 768px){
+  .user {
+    padding: 2.5rem;
+  }
+  
+  .user-info {
+    gap: 2.5rem;
+  }
+
+  .user-name {
+    font-size: 1.625em;
+  }
+
+  .user-login {
+    font-size: 1em;
+  }
+
+  .user-created {
+    font-size: 1em;
+  }
+
+  .user-bio {
+    margin-top: 1.5rem;
+    margin-bottom: 2rem;
+    font-size: 0.9375em;
+  }
+
+  .user-github {
+    padding: 1rem 2rem;
+    justify-content: flex-start;
+    gap: 5.625rem;
+  }
+
+  .user-repos,
+  .user-followers,
+  .user-followings {
+    gap: 0;
+  }
+
+  .public-repos,
+  .followers,
+  .following {
+    font-size: 2em;
+    text-align: start;
+  }
+
+  .user-social {
+    margin-top: 1.875rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 1.125rem;
+    font-size: 0.95em;
+  }
+}

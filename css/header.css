@@ -1,0 +1,42 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2.25rem;
+}
+
+.header .logo {
+  font-weight: bold;
+  font-size: 1.625rem;
+  color: var(--logo);
+}
+
+.header .toggle-container {
+ 
+}
+
+.header .toggle-container .toggle-input {
+  display: none;
+}
+
+.header .toggle-container .toggle-text {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  color: var(--primary-color);
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 0.8125rem;
+  letter-spacing: 2.5px;
+  cursor: pointer;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.header .toggle-container .toggle-text:hover {
+  color: var(--hover);
+}
+
+.header .toggle-container .toggle-text i {
+  font-size: 1.25rem;
+  letter-spacing: 0;
+}

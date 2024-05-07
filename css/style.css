@@ -1,4 +1,7 @@
 @import './icons.css';
+@import './header.css';
+@import './search.css';
+@import './user.css';
 @import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
 
 /* light mode color */
@@ -33,206 +36,22 @@ body {
   margin: 0;
   padding: 2rem 1.5rem 5rem 1.5rem;
   color: var(--primary-color);
+  display: grid;
+  place-items: center;
 }
 
 .container {
   
 }
 
-.header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 2.25rem;
-}
+@media screen and (min-width: 768px){
+  body {
+    padding: 0;
+    height: 64rem;
+  }
 
-.header .logo {
-  font-weight: bold;
-  font-size: 1.625rem;
-  color: var(--logo);
+  .container {
+    max-width: 573px;
+  }
 }
-
-.header .toggle-container {
- 
-}
-
-.header .toggle-container .toggle-input {
-  display: none;
-}
-
-.header .toggle-container .toggle-text {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-  color: var(--primary-color);
-  text-transform: uppercase;
-  font-weight: bold;
-  font-size: 0.8125rem;
-  letter-spacing: 2.5px;
-  cursor: pointer;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-}
-
-.header .toggle-container .toggle-text:hover {
-  color: var(--hover);
-}
-
-.header .toggle-container .toggle-text i {
-  font-size: 1.25rem;
-  letter-spacing: 0;
-}
-
-.search {
-  margin-bottom: 1rem;
-  padding: 0.45rem 0.5rem 0.45rem 1rem;
-  border-radius: 1rem;
-  background-color: var(--content-bg);
-  
-}
-
-.search-form {
-  display: grid;
-  grid-template-columns: auto 1fr auto;
-  column-gap: 0.5rem;
-  align-items: center;
-}
-
-.icon-search {
-  color: var(--secondary-color);
-  font-size: 1.25rem;
-}
-
-.search-input {
-  padding: 0;
-  border: none;
-  outline: none;
-  background-color: var(--content-bg);
-  color: var(--primary-color);
-  font-family: var(--fontFamily);
-  font-size: 0.75rem;
-  line-height: 1.5rem;
-}
-
-.search-input::-webkit-input-placeholder {
-  color: var(--primary-color);
-}
-
-.search-button {
-  padding: 0.75rem 1rem;
-  background-color: var(--secondary-color);
-  border: none;
-  border-radius: 10px;
-  font-family: var(--fontFamily);
-  font-weight: bold;
-  font-size: 14px;
-  color: var(--button);
-  cursor: pointer;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-}
-
-.user {
-  padding: 2rem 1.5rem 3rem 1.5rem;
-  border-radius: 1rem;
-  background-color: var(--content-bg);
-}
-
-.user-info {
-  display: flex;
-  gap: 1.25rem;
-}
-
-.avatar-container {
-  min-width: 4.375rem;
-  max-width: 7.375rem;
-}
-
-.user-avatar {
-  width: 100%;
-  vertical-align: middle;
-}
-
-.info-container {
-  min-width: 11.8125rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.user-name {
-  color: var(--user);
-  font-weight: bold;
-}
-
-.user-login {
-  margin-bottom: 0.375rem;
-  color: var(--secondary-color);
-  font-size: 0.75rem;
-}
-
-.user-created {
-  font-size: 0.75rem;
-}
-
-.user-bio {
-  margin-top: 33px;
-  margin-bottom: 23px;
-  font-size: 0.75rem;
-  line-height: 1.575rem;
-}
-
-.user-github {
-  display: flex;
-  justify-content: space-evenly;
-  padding: 1.125rem 0.875rem;
-  border-radius: 0.625rem;
-  background-color: var(--body-bg);
-  font-size: 0.75em;
-}
-
-.user-repos,
-.user-followers,
-.user-followings {
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
-  text-align: center;
-}
-
-.public-repos,
-.followers,
-.following {
-  color: var(--user);
-  font-size: 1rem;
-  font-weight: bold;
-}
-
-.user-social {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  padding-left: 0;
-  margin-top: 1.5rem;
-  margin-bottom: 0;
-  list-style: none;
-  font-size: 0.75rem;
-}
-
-.user-social li {
-  display: flex;
-  gap: 0.75rem;
-}
-
-.user-social li:nth-child(1) {
-  gap: 1rem;
-}
-
-.user-social li i {
-  font-size: 1.25rem;
-}
-
-.user-social li a {
-  text-decoration: none;
-  color: var(--primary-color);
-}
-
 
