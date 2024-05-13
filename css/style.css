@@ -15,7 +15,8 @@
   --icon: rgb(105, 124, 154);
   --logo: rgb(34, 39, 49);
   --button: rgb(255, 255, 255);
-  --hover: rgb(34, 39, 49);
+  --hoverIcon: rgb(34, 39, 49);
+  --hoverBtn: rgb(96, 171, 255);
 }
 
 [data-theme="dark"] {
@@ -27,7 +28,7 @@
   --icon: rgb(255, 255, 255);
   --logo: rgb(255, 255, 255);
   --button: rgb(255, 255, 255);
-  --hover: rgb(144, 164, 212);
+  --hoverIcon: rgb(144, 164, 212);
 }
 
 body {
@@ -53,5 +54,16 @@ body {
   .container {
     max-width: 573px;
   }
+}
+
+@media screen and (min-width: 1024px){
+  body {
+    height: 100vh;
+  }
+
+  .container {
+    max-width: 730px;
+  }
+  
 }
 

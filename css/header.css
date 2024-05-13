@@ -33,7 +33,7 @@
 }
 
 .header .toggle-container .toggle-text:hover {
-  color: var(--hover);
+  color: var(--hoverIcon);
 }
 
 .header .toggle-container .toggle-text i {
