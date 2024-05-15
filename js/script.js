@@ -1,7 +1,26 @@
 const searchForm = document.querySelector('.search-form');
 const noFound = document.querySelector('.search-noresults');
 const user = document.querySelector('.user');
+const toggle = document.getElementById('toggle');
 
+
+//Dark mode
+function darkMode(e) {
+  console.dir(e.target.checked);
+  const text = e.target.nextElementSibling.firstChild;
+  const icon = e.target.nextElementSibling.lastChild;
+  if(e.target.checked) {
+    text.textContent = 'light';
+    icon.classList.replace('icon-moon', 'icon-sun');
+    document.documentElement.setAttribute('data-theme', 'dark');
+  } else {
+    text.textContent = 'dark';
+    icon.classList.replace('icon-sun', 'icon-moon');
+    document.documentElement.removeAttribute('data-theme');
+  }
+}
+
+//Search
 function search(e) {
   e.preventDefault();
   const searchInput = document.querySelector('.search-input');
@@ -19,6 +38,7 @@ function showUser(devfinder) {
   const day = date[2]
   
   const div = document.createElement('div');
+  div.className = 'user-container';
   
   div.innerHTML = `
     <article class="user-info">
@@ -55,7 +75,7 @@ function showUser(devfinder) {
       <li><i class="icon-location"></i>${devfinder.location ? devfinder.location : 'Not Available'}</li>
       <li><i class="icon-website"></i><a href="${devfinder.html_url}">${devfinder.html_url ? devfinder.html_url.split('//')[1] : 'Not Available'}</a></li>
       <li><i class="icon-twitter"></i><a href="https://twitter.com/${devfinder.twitter_username}">${devfinder.twitter_username ? devfinder.twitter_username : 'Not Available'}</a></li>
-      <li><i class="icon-company"></i><a href="https://${devfinder.company}.com">${devfinder.company ? devfinder.company : 'Not Available'}</a></li>
+      <li><i class="icon-company"></i>${devfinder.company ? devfinder.company : 'Not Available'}</li>
     </ul>
   `;
   
@@ -94,3 +114,4 @@ async function searchApi(username) {
 }
 
 searchForm.addEventListener('submit', search);
+toggle.addEventListener('click', darkMode);

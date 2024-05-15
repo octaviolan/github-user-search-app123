@@ -163,11 +163,18 @@
     row-gap: 1.125rem;
     font-size: 0.95em;
   }
+
+  .user-social li:nth-of-type(3) {
+    grid-area: 1 / 2 / 2 / 3;
+  }
 }
 
 @media screen and (min-width: 1024px) {
+
   .user {
     padding: 3rem;
+  }
+  .user-container {
     display: grid;
     grid-template-columns: 118px 1fr;
     grid-template-rows: 1fr auto 85px 63px;
@@ -185,7 +192,7 @@
   .info-container {
     width: 100%;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr auto;
     grid-template-rows: 1fr 1fr 1fr;
   }
 
