@@ -12,6 +12,8 @@
 .avatar-container {
   min-width: 4.375rem;
   max-width: 7.375rem;
+  border-radius: 50%;
+  overflow: hidden; 
 }
 
 .user-avatar {
